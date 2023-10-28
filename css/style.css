@@ -1,0 +1,480 @@
+html{
+  box-sizing: border-box;
+}
+
+*, *::before, *::after{ /*для того, чтобы падинги 
+  откладывались внутрь элемента, не увеличивая его
+  необходимый размер*/
+  box-sizing: inherit; /*наследование от родителя т.е. html*/
+}
+body{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  line-height: normal;
+  font-weight: 400;
+  color: #B7B7B7;
+  background-color: #1C1B1B;
+  
+}
+
+img{
+  max-width: 100%; /*чтобы картинка не выходила за пределы контейнера*/
+  height: 100%; /*увеличивалась пропорционально по высоте  */
+}
+
+.wraaaaaap{
+  height: 100vh; 
+  background:url(../img/img_intro.png) no-repeat right top;
+}
+/*header style start*/
+
+.header{
+
+  min-height: 95px;
+  padding-top: 24px;
+  padding-bottom: 220px;
+}
+
+.header__logo{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 50px;
+}
+
+.header__logo-img{
+  margin-right: 30px;
+}
+
+.header__logo-desc{
+  color: #B7B7B7;
+  font-size: 16px;
+  max-width: 173px;
+}
+
+.header__wrapper{
+  display: flex;
+  margin-top: 24px;
+  flex-wrap: wrap;
+  
+} 
+.header__nav{
+  min-width: 250px;
+  display: flex;
+  
+}
+.header__call-pic{
+  margin-right: 30px;
+}
+
+.header__call{
+  color: #B7B7B7;
+  font-size: 16px;
+}
+
+
+/*header style end*/
+
+/*main style start*/
+.main{
+  
+}
+.intro{
+  
+  /* height: 100vh;  */
+  /* background:url(../img/img_intro.png) no-repeat right top; */ 
+}
+
+.wrapper{
+  max-width: 1315px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.main__title-img{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.main__title-wrap{
+  max-width: 507px;
+  margin-bottom: 25px;
+}
+.main__title{
+  display: inline;
+  color: #FFF;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.main__desc{
+  background: transparent url(../icons/line_intro.svg) no-repeat 2px 1px;
+  padding-left: 56px;
+  max-width: 477px;
+  color: #ffffff;
+  margin-bottom: 54px;
+}
+.main__button{
+  width: 308px;
+  height: 61px;
+  background: radial-gradient(50% 50.00% at 50% 50.00%, #FF724F 0%, #FF1E24 100%);
+  color: #1C1B1B;
+  font-size: 16px;
+  transition: .3s;
+  margin-bottom: 340px;
+}
+
+.main__button:focus, .main__button:active{
+  background: radial-gradient(50% 50.00% at 50% 50.00%, #FF1E24 0%, #8d0000 100%);
+}
+
+.main__button:hover{
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/*main style end*/
+
+/*workers style start*/
+
+.workers{
+  padding-bottom: 152px;
+}
+
+.workers__title{
+  margin-bottom: 27px;
+}
+
+.workers__title_1{
+  color: #FFF;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.workers__title_2{
+  position: absolute;
+  top: 36px;
+}
+
+.workers__desc-wrap{
+  width: 718px;
+  margin : 0 auto;
+  margin-bottom: 68px;
+}
+
+.workers__desc{
+  color: #B7B7B7;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.workers__profiles{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+}
+
+.workers__profile{
+  transition: .15s all;
+  grid-column: span 1;
+  margin-bottom: 112px;
+}
+
+.workers__profile-img{
+  object-fit: cover;
+  margin-bottom: 20px;
+  transition: .15s all;
+}
+
+.workers__profile-name{
+transition: .15s all;
+}
+
+.workers__profile:hover .workers__profile-img{
+  transform: scale(1.05);
+}
+
+.workers__profile:hover .workers__profile-name{
+  color: #FF1E24;
+  transition: .15s all;
+}
+
+.workers__title{
+  position: relative;
+  height: 196px;
+  background: url(../img/circle.png), url(../img/circle.png);
+  background-position: left top, right top;
+  background-repeat: no-repeat, no-repeat;
+  padding-left: 198px;
+  padding-right: 198px;
+}
+
+/*workers style end*/
+
+/*benefits style start*/
+.benefits{
+  background: url(../icons/mers_logo_background.png), url(../img/car_benefits.png);
+  background-position: top -13px left -98px, top 148px right;
+  background-repeat: no-repeat, no-repeat;
+}
+.benefits__title{
+  margin: 0 auto;
+  max-width: 973px;
+  text-align: center;
+ 
+  margin-bottom: 30px;
+}
+
+.benefits__title-1{
+  display: inline;
+  color: #FFF;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.benefits__list{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.benefits__list_point{
+  max-width:635px;
+  padding-left: 83px;
+  background: transparent url(../icons/point.svg) no-repeat left top;
+  margin-bottom: 16px;
+  padding-bottom: 20px;
+}
+
+.benefits__list_point:last-child{
+  margin-bottom: 0;
+}
+
+.benefits__list_point-desc{
+  color: #9A9A9A;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.benefits__button-wrap{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefits__button{
+  padding: auto 0;
+  margin-bottom: 82px;
+}
+
+/*benefits style end*/
+
+/*contract style start*/
+.contract{
+  background-color: #2D1616;
+}
+
+.wrapper_contract{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.contract__backgroung-img{
+position: absolute;
+right: -450px;
+bottom: 0;
+width: 314px;
+height: 326px;
+}
+
+.contract__content{
+  padding-top: 288px;
+  margin-right: 20px;
+  background: url(../icons/white_line.svg) no-repeat 328px 404px;
+}
+
+.contract__title{
+  max-width: 528px;
+  color: #E3E3E3;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.contract__desc{
+  max-width: 447px;
+  margin-bottom: 42px;
+  color: #DDD;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contract__img{
+  display: inline-block;
+  padding-top: 112px;
+  position: relative;
+  margin: 0 95px;
+}
+
+.contract__main-img{
+  width: 573px;
+  height: 576px;
+  margin-left: 46px;
+}
+
+.contract__img-2{
+  width: 115px;
+  height: 119px;
+  z-index: 3;
+  position: absolute;
+  top: 490px;
+  left: 0;
+}
+
+/*contract style end*/
+
+/*form style start*/
+.form{
+  position: relative;
+}
+.form__title{
+  max-width: 923px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 45px;
+}
+
+.form__title-1{
+  display: inline;
+  color: #FFF;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.form__field{
+  margin: auto;
+  max-width: 701px;
+  height: 702px;
+  border: 1px solid #FF5E45;
+  background: #2C2C2C;
+  align-items: center;
+}
+
+.form__field-title{
+  margin: auto;
+  max-width: 516px;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 36px;
+}
+
+.form__field-title-1{
+  color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+  background-image: linear-gradient(180deg,#FF2D2A 50%, #DA4100 50%);
+  display: inline;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.form__field-desc{
+  text-align: center;
+  margin-bottom: 58px;
+}
+
+.title_color{
+  color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(90deg, #FF9762, #FF0015 80%, #FF9762);
+}
+
+.form-calling_info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content : center;
+}
+
+.form__calling{
+  padding: 0 100px;
+}
+.form__calling-field{
+  border: 1px solid #8B8B8B;
+  background: #FFF;
+  width: 100%;
+  height: 96px;
+  margin-bottom: 20px;
+  padding: 0 60px;
+}
+
+
+.form__calling-field::placeholder{
+  padding: 37px 0;
+  color: #898989;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.form__button{
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+input{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.form__calling-check{
+color: #555;
+}
+
+.form__calling-politics{
+  text-decoration: underline;
+  color: #E13131;
+}
+
+.form__images-bc{
+  position: absolute;
+  right: -280px;
+  top: 410px;
+  z-index: 3;
+  width: 967px;
+  height: 484px;
+}
+
+.form__images-bc-blur{
+  position: absolute;
+  top: 110px;
+  width: 617px;
+  height: 568px;
+  left: 0;
+}
+/*form style end*/
